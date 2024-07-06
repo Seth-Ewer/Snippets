@@ -1,0 +1,49 @@
+body{
+    margin:0;
+  }
+  
+  #background{
+    width:100vw;
+    height:100vh;
+    background:teal;
+    display:flex;
+  }
+  
+  #quote-box{
+    width: 400px;
+    border-radius:3px;
+    border: 20px solid white;
+    margin: auto;
+    background:white;
+    color:black;
+    display:flex;
+    flex-direction:column;
+  }
+  
+  #box-body{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+  }
+  #text{
+    width:100%;
+    font-size:2em;
+  }
+  #author{
+    height:5vh;
+    width:100%;
+    text-align:right;
+    font-size:1.25em;
+  }
+  
+  #box-footer{
+    padding-top:1vh;
+    height:5vh;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+  }
+  
+  #spacer{
+    width: 55%;
+  }

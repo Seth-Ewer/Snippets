@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { marked } from 'marked'
+import TestImage from '../TestImage.png';
 
 marked.use({
   breaks: true
@@ -15,7 +16,7 @@ function MarkdownParsing(){
   startingtext = startingtext.concat("\n", "List!!!\n1. item\n2. item\n3. item");
   startingtext = startingtext.concat("\n", "> beep");
   startingtext = startingtext.concat("\n", "**BOLD**");
-  startingtext = startingtext.concat("\n", "![image](../TestImage.png)");
+  startingtext = startingtext.concat("\n", `![image](${TestImage})`);
   const [currentText, setCurrentText] = useState(startingtext);
   
   return(

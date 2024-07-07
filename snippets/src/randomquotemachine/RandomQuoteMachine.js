@@ -1,16 +1,8 @@
-import React from "React";
-import ReactDOM from "ReactDOM/client";
-import { useState } from "React";
+import React from "react";
+import { useState } from "react";
+import './RandomQuoteMachine.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-
-function App() {
+function RandomQuoteMachine() {
   const quoteBank = [
     {author: 1, text: "test quote one"},
     {author: 2, text: "test quote two"},
@@ -66,3 +58,5 @@ function QuoteBoxBody(props) {
     </div>
   );
 }
+
+export default RandomQuoteMachine;

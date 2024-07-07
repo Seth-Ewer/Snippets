@@ -1,30 +1,21 @@
-import React from "React";
-import ReactDOM from "ReactDOM/client";
-import { useState } from "React";
-import { marked } from "marked";
+import React from "react";
+import { useState } from "react";
+import { marked } from 'marked'
 
 marked.use({
   breaks: true
 });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-
-function App(){
+function MarkdownParsing(){
   var startingtext = "# header 1";
   startingtext = startingtext.concat("\n", "## header 2");
-  startingtext = startingtext.concat("\n", "[link](https://codepen.io/laiko_01/pen/BagaBrw?editors=0010)");
+  startingtext = startingtext.concat("\n", "[link](https://github.com/Seth-Ewer)");
   startingtext = startingtext.concat("\n", "not code `code` not code");
   startingtext = startingtext.concat("\n", "```\ndefinitely code\ndefinitely code\ndefinitely code\n```");
   startingtext = startingtext.concat("\n", "List!!!\n1. item\n2. item\n3. item");
   startingtext = startingtext.concat("\n", "> beep");
   startingtext = startingtext.concat("\n", "**BOLD**");
-  startingtext = startingtext.concat("\n", "![image](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)");
+  startingtext = startingtext.concat("\n", "![image](../TestImage.png)");
   const [currentText, setCurrentText] = useState(startingtext);
   
   return(
@@ -58,3 +49,5 @@ function Preview(props){
   );
   
 }
+
+export default MarkdownParsing;

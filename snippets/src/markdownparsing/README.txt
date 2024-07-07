@@ -1,1 +1,0 @@
-This is a React js code snippet that experiments with the Marked library.

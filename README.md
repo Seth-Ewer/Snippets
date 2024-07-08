@@ -1,6 +1,7 @@
 # Snippets
 
 This repository contains a couple of pieces of code I have written as practice.
+Dependent on Marked: https://marked.js.org/#installation
 
 
 ### Markdown Parsing
